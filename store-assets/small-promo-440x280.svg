@@ -1,0 +1,64 @@
+<!-- BRIEF: Chrome Web Store 440x280 promotional tile for FocusTube; dark cinematic surface, coral focus icon, a clear central video window and faded surrounding distractions; concise English tagline. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 280" role="img" aria-labelledby="title desc">
+  <title id="title">FocusTube promotional tile</title>
+  <desc id="desc">FocusTube keeps the current video visible while fading surrounding distractions.</desc>
+  <defs>
+    <linearGradient id="tile-background" x1="28" y1="15" x2="411" y2="273" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#202532"/>
+      <stop offset="1" stop-color="#0c0f16"/>
+    </linearGradient>
+    <linearGradient id="brand-gradient" x1="54" y1="50" x2="138" y2="144" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff7569"/>
+      <stop offset="0.55" stop-color="#f0444c"/>
+      <stop offset="1" stop-color="#c91f39"/>
+    </linearGradient>
+    <linearGradient id="video-gradient" x1="245" y1="142" x2="372" y2="236" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#65536f"/>
+      <stop offset="0.52" stop-color="#34495a"/>
+      <stop offset="1" stop-color="#805443"/>
+    </linearGradient>
+    <radialGradient id="ambient-glow" cx="0" cy="0" r="1" gradientTransform="translate(104 86) rotate(42) scale(186 176)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff4f59" stop-opacity="0.23"/>
+      <stop offset="1" stop-color="#ff4f59" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="tile-shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+
+  <g id="background">
+    <rect width="440" height="280" fill="url(#tile-background)"/>
+    <rect width="440" height="280" fill="url(#ambient-glow)"/>
+    <circle cx="405" cy="35" r="86" fill="#6672ff" opacity="0.05"/>
+  </g>
+
+  <g id="brand-icon" filter="url(#tile-shadow)">
+    <rect x="46" y="38" width="104" height="104" rx="28" fill="url(#brand-gradient)"/>
+    <path d="M72 38h52l-10 25H82zM46 65v52l26-11V76zM150 65v52l-26-11V76zM72 142h52l-10-25H82z" fill="#5c1324" opacity="0.42"/>
+    <rect x="72" y="64" width="52" height="52" rx="11" fill="#151923" stroke="#fff" stroke-width="3"/>
+    <path d="M91 78.5c0-2 2.2-3.2 3.9-2.1l17.2 10.5c1.6 1 1.6 3.3 0 4.3L94.9 101.7c-1.7 1.1-3.9-.2-3.9-2.1z" fill="#fff"/>
+  </g>
+
+  <g id="wordmark" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="46" y="182" fill="#fff" font-size="34" font-weight="750" letter-spacing="-1">FocusTube</text>
+    <text x="47" y="210" fill="#b8bfcc" font-size="15" font-weight="500">Watch the video. Fade the noise.</text>
+  </g>
+
+  <g id="feature-preview" filter="url(#tile-shadow)">
+    <rect x="222" y="55" width="184" height="169" rx="17" fill="#272c38" stroke="#ffffff" stroke-opacity="0.1"/>
+    <rect x="237" y="70" width="154" height="18" rx="6" fill="#11151d" opacity="0.8"/>
+    <circle cx="248" cy="79" r="3" fill="#ff625c"/><circle cx="259" cy="79" r="3" fill="#e0a74c"/><circle cx="270" cy="79" r="3" fill="#57ad77"/>
+    <rect x="237" y="99" width="154" height="101" rx="10" fill="#080a0f"/>
+    <g id="faded-distractions" opacity="0.28">
+      <rect x="245" y="107" width="32" height="9" rx="3" fill="#8b93a3"/>
+      <rect x="351" y="107" width="32" height="9" rx="3" fill="#8b93a3"/>
+      <rect x="245" y="125" width="24" height="55" rx="4" fill="#59606d"/>
+      <rect x="359" y="125" width="24" height="55" rx="4" fill="#59606d"/>
+      <rect x="245" y="188" width="138" height="5" rx="2.5" fill="#737b89"/>
+    </g>
+    <rect x="277" y="117" width="82" height="62" rx="7" fill="url(#video-gradient)" stroke="#fff" stroke-width="2"/>
+    <circle cx="318" cy="148" r="13" fill="#fff" opacity="0.92"/>
+    <path d="M315 141.5v13l10-6.5z" fill="#1b1f28"/>
+    <path d="M272 129v-8c0-5 4-9 9-9h8M347 112h8c5 0 9 4 9 9v8M364 167v8c0 5-4 9-9 9h-8M289 184h-8c-5 0-9-4-9-9v-8" fill="none" stroke="#ff6a62" stroke-linecap="round" stroke-width="3"/>
+  </g>
+</svg>

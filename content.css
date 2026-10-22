@@ -1,0 +1,42 @@
+#focustube-overlay-root {
+  --focustube-video-opacity: 0.15;
+  --focustube-video-blur: 0px;
+  --focustube-outside-opacity: 0.72;
+  --focustube-outside-blur: 8px;
+  position: fixed;
+  inset: 0;
+  z-index: 2147483646;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+#focustube-overlay-root[data-visible='true'] {
+  visibility: visible;
+}
+
+#focustube-overlay-root .focustube-panel {
+  position: fixed;
+  box-sizing: border-box;
+  transition: background-color 140ms ease, backdrop-filter 140ms ease;
+  contain: strict;
+}
+
+#focustube-overlay-root .focustube-outside-panel {
+  background: rgba(5, 7, 12, var(--focustube-outside-opacity));
+  -webkit-backdrop-filter: blur(var(--focustube-outside-blur));
+  backdrop-filter: blur(var(--focustube-outside-blur));
+  pointer-events: auto;
+}
+
+#focustube-overlay-root .focustube-video-panel {
+  background: rgba(5, 7, 12, var(--focustube-video-opacity));
+  -webkit-backdrop-filter: blur(var(--focustube-video-blur));
+  backdrop-filter: blur(var(--focustube-video-blur));
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #focustube-overlay-root .focustube-panel {
+    transition: none;
+  }
+}

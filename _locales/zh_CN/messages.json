@@ -1,0 +1,52 @@
+{
+  "extensionName": {
+    "message": "FocusTube 专注模式",
+    "description": "扩展名称"
+  },
+  "extensionDescription": {
+    "message": "观看 YouTube 时分别调节当前视频区域和其他区域的遮罩透明度与模糊度。",
+    "description": "扩展描述"
+  },
+  "popupSubtitle": {
+    "message": "分别调节视频与周围区域"
+  },
+  "enableFocusMode": {
+    "message": "启用专注模式"
+  },
+  "overlaySettings": {
+    "message": "遮罩设置"
+  },
+  "currentVideoArea": {
+    "message": "当前视频区域"
+  },
+  "otherAreas": {
+    "message": "其他区域"
+  },
+  "overlayOpacity": {
+    "message": "遮罩透明度"
+  },
+  "blurAmount": {
+    "message": "模糊度"
+  },
+  "videoEdgeGap": {
+    "message": "视频边缘留白"
+  },
+  "settingsAutoSave": {
+    "message": "设置会自动保存"
+  },
+  "resetDefaults": {
+    "message": "恢复默认"
+  },
+  "statusUseOnYouTube": {
+    "message": "请在 YouTube 视频页使用"
+  },
+  "statusApplied": {
+    "message": "已应用到当前视频"
+  },
+  "statusWaiting": {
+    "message": "等待检测到播放器"
+  },
+  "statusRefresh": {
+    "message": "刷新 YouTube 页面后即可使用"
+  }
+}

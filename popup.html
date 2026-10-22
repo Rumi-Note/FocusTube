@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FocusTube</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="brand-mark" aria-hidden="true"><span></span></div>
+        <div>
+          <h1>FocusTube</h1>
+          <p data-i18n="popupSubtitle">Adjust the video and surrounding areas separately</p>
+        </div>
+        <label class="switch" aria-label="Enable focus mode" data-i18n-aria-label="enableFocusMode">
+          <input id="enabled" type="checkbox">
+          <span class="switch-track"></span>
+        </label>
+      </header>
+
+      <section class="preview" aria-hidden="true">
+        <div class="preview-video"><span class="play">▶</span></div>
+      </section>
+
+      <section class="controls" aria-label="Overlay settings" data-i18n-aria-label="overlaySettings">
+        <fieldset class="control-group">
+          <legend data-i18n="currentVideoArea">Current video area</legend>
+          <label class="control" for="videoOpacity">
+            <span data-i18n="overlayOpacity">Overlay opacity</span>
+            <output id="videoOpacityValue">15%</output>
+            <input id="videoOpacity" type="range" min="0" max="95" step="1">
+          </label>
+
+          <label class="control" for="videoBlur">
+            <span data-i18n="blurAmount">Blur amount</span>
+            <output id="videoBlurValue">0 px</output>
+            <input id="videoBlur" type="range" min="0" max="30" step="1">
+          </label>
+        </fieldset>
+
+        <fieldset class="control-group">
+          <legend data-i18n="otherAreas">Other areas</legend>
+          <label class="control" for="outsideOpacity">
+            <span data-i18n="overlayOpacity">Overlay opacity</span>
+            <output id="outsideOpacityValue">72%</output>
+            <input id="outsideOpacity" type="range" min="0" max="95" step="1">
+          </label>
+
+          <label class="control" for="outsideBlur">
+            <span data-i18n="blurAmount">Blur amount</span>
+            <output id="outsideBlurValue">8 px</output>
+            <input id="outsideBlur" type="range" min="0" max="30" step="1">
+          </label>
+        </fieldset>
+
+        <label class="control edge-control" for="gap">
+          <span data-i18n="videoEdgeGap">Video edge gap</span>
+          <output id="gapValue">4 px</output>
+          <input id="gap" type="range" min="0" max="40" step="1">
+        </label>
+      </section>
+
+      <footer>
+        <span id="status" role="status" data-i18n="settingsAutoSave">Settings are saved automatically</span>
+        <button id="reset" type="button" data-i18n="resetDefaults">Reset defaults</button>
+      </footer>
+    </main>
+    <script src="focus-core.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

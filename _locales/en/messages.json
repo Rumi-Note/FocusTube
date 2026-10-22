@@ -1,0 +1,52 @@
+{
+  "extensionName": {
+    "message": "FocusTube Focus Mode",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Adjust overlay opacity and blur separately for the current YouTube video and surrounding areas.",
+    "description": "Extension description"
+  },
+  "popupSubtitle": {
+    "message": "Adjust the video and surrounding areas separately"
+  },
+  "enableFocusMode": {
+    "message": "Enable focus mode"
+  },
+  "overlaySettings": {
+    "message": "Overlay settings"
+  },
+  "currentVideoArea": {
+    "message": "Current video area"
+  },
+  "otherAreas": {
+    "message": "Other areas"
+  },
+  "overlayOpacity": {
+    "message": "Overlay opacity"
+  },
+  "blurAmount": {
+    "message": "Blur amount"
+  },
+  "videoEdgeGap": {
+    "message": "Video edge gap"
+  },
+  "settingsAutoSave": {
+    "message": "Settings are saved automatically"
+  },
+  "resetDefaults": {
+    "message": "Reset defaults"
+  },
+  "statusUseOnYouTube": {
+    "message": "Open a YouTube video to use FocusTube"
+  },
+  "statusApplied": {
+    "message": "Applied to the current video"
+  },
+  "statusWaiting": {
+    "message": "Waiting for the video player"
+  },
+  "statusRefresh": {
+    "message": "Refresh the YouTube page to enable FocusTube"
+  }
+}
